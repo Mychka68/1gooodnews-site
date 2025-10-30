@@ -167,7 +167,7 @@ export default function AccueilFR() {
           maxWidth: 400,
         }}
       >
-        Téléchargez l'application ici :-) C'est <strong>gratuit</strong>, tout{' '}
+        En cours de construction - Téléchargez l'application ici :-) C'est <strong>gratuit</strong>, tout{' '}
         <strong>léger</strong>, sans pub, et juste pour le plaisir !
       </p>
 
