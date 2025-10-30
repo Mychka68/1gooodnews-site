@@ -166,7 +166,7 @@ export default function HomeEN() {
           maxWidth: 400,
         }}
       >
-        Download the app here :-) It’s <strong>free</strong>, super{' '}
+        Site under construction - Download the app here :-) It’s <strong>free</strong>, super{' '}
         <strong>lightweight</strong>, ad-free, and just for the joy!
       </p>
 
