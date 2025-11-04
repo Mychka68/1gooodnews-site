@@ -97,6 +97,23 @@ export default function HomeEN() {
         />
       </div>
 
+{/* Boutons de téléchargement (inchangés) */}
+      <div style={{ display: 'flex', gap: 20, justifyContent: 'center', flexWrap: 'wrap', marginBottom: 10 }}>
+        {/* Google Play */}
+        <a href="https://play.google.com/store/apps/details?id=TON.PACKAGE" target="_blank" rel="noopener noreferrer" aria-label="Disponible sur Google Play" style={{ backgroundColor: '#4CAF50', borderRadius: 30, padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 150, height: 40, transition: 'background-color 0.3s ease' }}>
+          <Image src="/logo-google-play.png" alt="Disponible sur Google Play" width={150} height={40} style={{ objectFit: 'contain' }} priority />
+        </a>
+        {/* App Store */}
+        <a href="https://apps.apple.com/app/idTON_APP_ID" target="_blank" rel="noopener noreferrer" aria-label="Télécharger sur l’App Store" style={{ backgroundColor: '#4CAF50', borderRadius: 30, padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 150, height: 40, transition: 'background-color 0.3s ease' }}>
+          <Image src="/logo-app-store.png" alt="Télécharger sur l’App Store" width={150} height={40} style={{ objectFit: 'contain' }} priority />
+        </a>
+      </div>
+
+      <p style={{ fontStyle: 'italic', color: '#444', fontSize: 15, lineHeight: '22px', marginBottom: 15, marginTop: 15, maxWidth: 400 }}>
+        Under construction - Download the app here :-) It's <strong>free</strong>super <strong>light</strong>, ad-free, and just for fun !
+      </p>
+
+      <hr style={{ width: '20%', height: '2px', backgroundColor: '#4CAF50', border: 'none', borderRadius: '2px', margin: '30px auto 40px auto', opacity: 0.4 }} />
 <section style={{ maxWidth: 500, marginBottom: 40, color: '#333', fontSize: 16, lineHeight: '24px' }}>
       {/* Image */}
       <Image
