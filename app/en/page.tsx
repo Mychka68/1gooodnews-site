@@ -110,7 +110,7 @@ export default function HomeEN() {
       </div>
 
       <p style={{ fontStyle: 'italic', color: '#444', fontSize: 15, lineHeight: '22px', marginBottom: 15, marginTop: 15, maxWidth: 400 }}>
-        Under construction - Download the app here :-) It's <strong>free</strong>super <strong>light</strong>, ad-free, and just for fun !
+        Under construction - Download the app here :-) It's <strong>free, </strong>super <strong>light</strong>, ad-free, and just for fun !
       </p>
 
       <hr style={{ width: '20%', height: '2px', backgroundColor: '#4CAF50', border: 'none', borderRadius: '2px', margin: '30px auto 40px auto', opacity: 0.4 }} />
