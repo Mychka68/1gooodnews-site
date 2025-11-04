@@ -1,33 +1,85 @@
 // components/ui/SocialIcons.jsx
 
-export function FacebookIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>📘</span>;
+export function FacebookIcon({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="#1877F2"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M22 12.07C22 6.48 17.52 2 12 2S2 6.48 2 12.07c0 5.01 3.66 9.15 8.44 9.88v-6.99H8.08v-2.89h2.36v-2.2c0-2.33 1.38-3.62 3.5-3.62 1.01 0 2.07.18 2.07.18v2.28h-1.17c-1.15 0-1.5.72-1.5 1.46v1.9h2.55l-.41 2.89h-2.14v6.99C18.34 21.22 22 17.08 22 12.07z" />
+    </svg>
+  );
 }
 
-export function TwitterIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>🐦</span>;
+export function TwitterIcon({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="#1DA1F2"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.29 3.9 12.14 12.14 0 01-8.82-4.47A4.28 4.28 0 004.1 9.86a4.23 4.23 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.2 4.28 4.28 0 01-1.93.07 4.29 4.29 0 004 2.98A8.6 8.6 0 012 19.54 12.14 12.14 0 008.29 21c7.55 0 11.68-6.26 11.68-11.69 0-.18-.01-.35-.02-.53A8.36 8.36 0 0022.46 6z" />
+    </svg>
+  );
 }
 
-export function LinkedinIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>💼</span>;
+export function LinkedinIcon({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="#0077B5"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48s.88 1.98 1.98 1.98c1.09 0 1.97-.88 1.97-1.98S6.07 3.5 4.98 3.5zM3.5 8.5h3v12h-3v-12zm6.5 0h2.88v1.64h.04c.4-.76 1.37-1.56 2.82-1.56 3.01 0 3.56 1.98 3.56 4.56v6.36h-3v-5.64c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.74h-3v-12z" />
+    </svg>
+  );
 }
 
-export function WhatsappIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>💬</span>;
+export function WhatsappIcon({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="#25D366"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M20.52 3.48A12.07 12.07 0 0012.1 0C5.4 0 0 5.4 0 12.1c0 2.13.56 4.2 1.62 6.03L0 24l5.95-1.56a12.09 12.09 0 0017.16-18.96l-.59.59zM12.1 21.73a9.6 9.6 0 01-5.05-1.46l-.36-.22-3.53.92.94-3.45-.23-.36a9.65 9.65 0 1117.35-6.32 9.62 9.62 0 01-9.12 10.89zM16.36 14.5c-.27-.13-1.6-.79-1.85-.89-.25-.1-.44-.15-.63.14s-.73.89-.9 1.07c-.16.18-.33.2-.6.07a7.72 7.72 0 01-2.26-1.4 8.35 8.35 0 01-1.55-1.94c-.16-.27 0-.41.12-.56.12-.13.27-.33.4-.5.13-.17.17-.28.27-.47.09-.2.05-.36-.02-.5-.07-.14-.63-1.51-.86-2.07-.23-.55-.47-.48-.64-.49h-.55c-.18 0-.47.07-.72.34a2.97 2.97 0 00-.93 2.2c0 1.3.94 2.55 1.07 2.73.13.18 1.84 2.83 4.46 3.96a15.29 15.29 0 001.51.56c.63.2 1.2.17 1.65.1.5-.08 1.6-.65 1.83-1.28.23-.63.23-1.16.17-1.28-.05-.12-.23-.2-.5-.34z" />
+    </svg>
+  );
 }
 
-export function MailIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>✉️</span>;
+export function MailIcon({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="#EA4335"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+    </svg>
+  );
 }
 
-export function CopyIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>📋</span>;
-}
-
-export function InstagramIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>📸</span>;
-}
-
-export function TiktokIcon({ size = 20 }) {
-  return <span style={{ fontSize: size }}>🎵</span>;
+export function CopyIcon({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="#9E9E9E"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 18H8V7h11v16z" />
+    </svg>
+  );
 }

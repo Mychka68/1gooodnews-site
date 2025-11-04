@@ -10,8 +10,6 @@ import {
   WhatsappIcon,
   MailIcon,
   CopyIcon,
-  InstagramIcon,
-  TiktokIcon,
 } from '@/components/ui/SocialIcons'; // adapte le chemin si besoin
 
 
@@ -83,18 +81,98 @@ export default function AccueilFR() {
 
         {/* Menu de partage fallback */}
         {showShareBox && (
-          <div style={{ backgroundColor: '#f8d393ff', padding: 15, borderColor: '#f19f13ff', borderRadius: 100, margin: '15px auto', maxWidth: 400, boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)' }}>
-            <p style={{ fontWeight: 'bold', marginBottom: 12 }}>Choisissez une plateforme :-)</p>
+          <div
+  style={{
+  backgroundColor: '#fff5d1',           // Fond pastel doux
+  padding: '24px',
+  borderRadius: '50px',
+  margin: '20px auto',
+  maxWidth: '320px',
+  boxShadow: '0 6px 24px rgba(0, 0, 0, 0.1)',  // Ombre douce
+  border: '2px solid #ffd591',          // ✅ Bord orange clair
+  textAlign: 'left',
+}}
+>
+            <p style={{ fontWeight: 'bold', marginBottom: 12, marginTop: 1 }}>Choisissez une plateforme :-)</p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank" rel="noopener noreferrer"><FacebookIcon /> Facebook</a>
-              <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText + shareUrl)}`} target="_blank" rel="noopener noreferrer"><TwitterIcon /> Twitter</a>
-              <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`} target="_blank" rel="noopener noreferrer"><LinkedinIcon /> LinkedIn</a>
-              <a href={`mailto:?subject=1 Bonne Nouvelle par Jour !&body=${encodeURIComponent(shareText + shareUrl)}`}><MailIcon />Email</a>
-              <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + shareUrl)}`} target="_blank" rel="noopener noreferrer"><WhatsappIcon />WhatsApp</a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><InstagramIcon />Instagram</a>
-              <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><TiktokIcon />TikTok</a>
-              <button onClick={handleCopy} style={{ backgroundColor: '#1F6E44', color: '#fff', border: 'none', padding: '8px 12px', borderRadius: 6, cursor: 'pointer' }}><CopyIcon /> ou juste copier le lien :-)</button>
-              {copied && <p style={{ marginTop: 5, fontSize: 13, color: '#1F6E44' }}>Merci d’avoir partagé :-) 🌱</p>}
+              <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`} target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    textDecoration: 'none',
+    fontSize: '16px',
+    color: '#000', // noir doux
+    fontWeight: '500',
+  }}><FacebookIcon /> Facebook</a>
+              <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText + shareUrl)}`} target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    textDecoration: 'none',
+    fontSize: '16px',
+    color: '#000', // noir doux
+    fontWeight: '500',
+  }}><TwitterIcon /> Twitter</a>
+              <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${shareUrl}`} target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    textDecoration: 'none',
+    fontSize: '16px',
+    color: '#000', // noir doux
+    fontWeight: '500',
+  }}><LinkedinIcon /> LinkedIn</a>
+              <a href={`mailto:?subject=1 Bonne Nouvelle par Jour !&body=${encodeURIComponent(shareText + shareUrl)}`}target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    textDecoration: 'none',
+    fontSize: '16px',
+    color: '#000', // noir doux
+    fontWeight: '500',
+  }}><MailIcon />Email</a>
+              <a href={`https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + shareUrl)}`} target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    textDecoration: 'none',
+    fontSize: '16px',
+    color: '#000', // noir doux
+    fontWeight: '500',
+  }}><WhatsappIcon />WhatsApp</a>
+              <button
+  onClick={handleCopy}
+  style={{
+    display: 'flex',
+    alignItems: 'center',
+    gap: '12px',
+    backgroundColor: 'transparent',
+    border: 'none',
+    fontSize: '16px',
+    color: '#000',
+    fontWeight: '500',
+    cursor: 'pointer',
+    padding: '0',
+  }}
+>
+  <CopyIcon size={24} />
+  Ou juste copier le lien :-)
+</button>
+              {copied && (
+  <p style={{ color: '#4CAF50', marginTop: '10px', fontSize: '15px' }}>
+    ✅ Lien copié. Merci du partage ! :-) 🌱
+  </p>
+)}
             </div>
           </div>
         )}
