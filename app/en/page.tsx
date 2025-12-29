@@ -433,8 +433,13 @@ export default function HomeEN() {
         <Link href="/en/about-us" style={{ textDecoration: 'none', color: '#1F6E44' }}>
           About us
         </Link>
+
         <Link href="/en/contact" style={{ textDecoration: 'none', color: '#1F6E44' }}>
           Submit a good news!
+        </Link>
+        
+        <Link href="/en/privacy" style={{ textDecoration: 'none', color: '#1F6E44' }}>
+          Privacy
         </Link>
       </div>
     </main>
