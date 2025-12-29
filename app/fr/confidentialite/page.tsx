@@ -1,4 +1,4 @@
-// app/fr/confidentialite.tsx
+import Link from 'next/link';
 
 export default function Confidentialite() {
   return (
@@ -13,39 +13,65 @@ export default function Confidentialite() {
 
       <h2>📱 Données collectées</h2>
       <p>
-        L’application ne collecte aucune donnée personnelle identifiable (nom, email, numéro de téléphone, etc.).
+        L’application ne collecte aucune donnée personnelle identifiable
+        (nom, email, numéro de téléphone, etc.).
       </p>
 
       <h2>🌍 Données techniques</h2>
       <p>
-        Certaines données techniques anonymes peuvent être traitées automatiquement afin d’assurer le bon fonctionnement de
-        l’application (chargement du contenu, affichage des bonnes nouvelles).
+        Certaines données techniques anonymes peuvent être traitées automatiquement afin d’assurer
+        le bon fonctionnement de l’application (chargement du contenu, affichage des bonnes nouvelles).
       </p>
       <p>Ces données ne permettent en aucun cas d’identifier un utilisateur.</p>
 
       <h2>🔔 Notifications</h2>
       <p>
-        Si l’utilisateur choisit d’activer les notifications, celles-ci servent uniquement à afficher une bonne nouvelle quotidienne.
+        Si l’utilisateur choisit d’activer les notifications, celles-ci servent uniquement
+        à afficher une bonne nouvelle quotidienne.
       </p>
       <p>Aucune donnée personnelle n’est utilisée à des fins publicitaires.</p>
 
       <h2>☁️ Services tiers</h2>
       <p>
-        L’application utilise Supabase comme service backend pour stocker et diffuser les contenus (bonnes nouvelles, images).
+        L’application utilise Supabase comme service backend pour stocker et diffuser
+        les contenus (bonnes nouvelles, images).
       </p>
       <p>Supabase respecte les standards de sécurité et de confidentialité en vigueur.</p>
 
       <h2>🚫 Publicité et suivi</h2>
-      <p>L’application ne contient aucune publicité et n’utilise aucun outil de suivi publicitaire.</p>
+      <p>
+        L’application ne contient aucune publicité et n’utilise aucun outil de suivi publicitaire.
+      </p>
 
       <h2>🔄 Modifications</h2>
       <p>
-        Cette politique de confidentialité peut être mise à jour si nécessaire. Toute modification sera publiée sur cette page.
+        Cette politique de confidentialité peut être mise à jour si nécessaire.
+        Toute modification sera publiée sur cette page.
       </p>
 
       <h2>📩 Contact</h2>
-      <p>Pour toute question concernant la confidentialité, vous pouvez nous contacter à :</p>
+      <p>
+        Pour toute question concernant la confidentialité, vous pouvez nous contacter à :
+      </p>
       <p><strong>1gooodnews@gmail.com</strong></p>
+
+      {/* Bouton retour accueil */}
+      <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+        <Link
+          href="/fr"
+          style={{
+            display: 'inline-block',
+            backgroundColor: '#1F6E44',
+            color: 'white',
+            padding: '10px 20px',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+          }}
+        >
+          Revenir à l’accueil
+        </Link>
+      </div>
     </main>
   );
 }

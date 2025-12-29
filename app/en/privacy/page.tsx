@@ -1,4 +1,4 @@
-// app/en/privacy.tsx
+import Link from 'next/link';
 
 export default function Privacy() {
   return (
@@ -48,6 +48,23 @@ export default function Privacy() {
         For any questions regarding privacy, you can contact us at:
       </p>
       <p><strong>1gooodnews@gmail.com</strong></p>
+
+      <div style={{ marginTop: '2rem', textAlign: 'center' }}>
+        <Link
+          href="/en"
+          style={{
+            display: 'inline-block',
+            backgroundColor: '#1F6E44',
+            color: 'white',
+            padding: '10px 20px',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+          }}
+        >
+          Back to Home
+        </Link>
+      </div>
     </main>
   );
 }
