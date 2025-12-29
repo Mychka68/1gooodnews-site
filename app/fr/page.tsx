@@ -208,10 +208,29 @@ export default function AccueilFR() {
 
       <Link href="/fr/archives" style={{ backgroundColor: '#4CAF50', padding: '14px 24px', borderRadius: 30, marginBottom: 40, width: '100%', maxWidth: 300, color: '#fff', fontSize: 16, textAlign: 'center', textDecoration: 'none', display: 'inline-block', transition: 'background-color 0.3s ease' }}>Voir les archives de bonnes nouvelles !</Link>
 
-      <div style={{ display: 'flex', gap: 30, fontSize: 14, color: '#777', marginBottom: 40, flexWrap: 'wrap', justifyContent: 'center' }}>
-        <Link href="/fr/qui-sommes-nous" style={{ textDecoration: 'none', color: '#1F6E44' }}>Qui sommes-nous ?</Link>
-        <Link href="/fr/contact" style={{ textDecoration: 'none', color: '#1F6E44' }}>Envoyez-nous une bonne nouvelle !</Link>
-      </div>
+      <div
+  style={{
+    display: 'flex',
+    gap: 30,
+    fontSize: 14,
+    color: '#777',
+    marginBottom: 40,
+    flexWrap: 'wrap',
+    justifyContent: 'center'
+  }}
+>
+  <Link href="/fr/qui-sommes-nous" style={{ textDecoration: 'none', color: '#1F6E44' }}>
+    Qui sommes-nous ?
+  </Link>
+
+  <Link href="/fr/contact" style={{ textDecoration: 'none', color: '#1F6E44' }}>
+    Envoyez-nous une bonne nouvelle !
+  </Link>
+
+  <Link href="/fr/confidentialite" style={{ textDecoration: 'none', color: '#1F6E44' }}>
+    Politique de confidentialité
+  </Link>
+</div>
     </main>
   );
 }
