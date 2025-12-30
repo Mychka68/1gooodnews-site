@@ -134,34 +134,6 @@ export default function HomeEN() {
             priority
           />
         </a>
-
-        {/* App Store */}
-        <a
-          href="https://apps.apple.com/app/idTON_APP_ID"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Download on the App Store"
-          style={{
-            backgroundColor: '#4CAF50',
-            borderRadius: 30,
-            padding: '12px 20px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 150,
-            height: 40,
-            transition: 'background-color 0.3s ease',
-          }}
-        >
-          <Image
-            src="/logo-app-store.png"
-            alt="Download on the App Store"
-            width={150}
-            height={40}
-            style={{ objectFit: 'contain' }}
-            priority
-          />
-        </a>
       </div>
 
       <p
@@ -177,6 +149,20 @@ export default function HomeEN() {
       >
         Under construction – Download the app here :-) It’s <strong>free</strong>, super{' '}
         <strong>light</strong>, ad-free, and just for fun!
+      </p>
+
+       <p
+        style={{
+          fontStyle: 'italic',
+          color: '#8ebfecff',
+          fontSize: 15,
+          lineHeight: '22px',
+          marginBottom: 15,
+          marginTop: 15,
+          maxWidth: 400,
+        }}
+      >
+        coming soon to the App Store :-)
       </p>
 
       <hr
