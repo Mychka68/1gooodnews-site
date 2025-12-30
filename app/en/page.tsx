@@ -203,33 +203,37 @@ export default function HomeEN() {
           }}
         />
 
-        {/* 💛 Share button with animation */}
-        <div
-          style={{
-            marginTop: 20,
-            textAlign: 'center',
-            position: 'relative',
-            display: 'block',
-          }}
-        >
-          <div style={{ display: 'inline-block', position: 'relative' }}>
-            <button
-              onClick={handleShare}
-              style={{
-                backgroundColor: '#FF9800',
-                color: '#fff',
-                border: 'none',
-                borderRadius: 30,
-                padding: '10px 22px',
-                fontSize: 14,
-                cursor: 'pointer',
-                transition: 'background-color 0.3s ease',
-              }}
-            >
-              📤 Share this page? :-)
-            </button>
-            {fire && <SoftBurstWeb fire />}
-          </div>
+        {/* ❤️ Share section with heart image */}
+<div
+  style={{
+    marginTop: 40,
+    textAlign: 'center',
+    position: 'relative',
+    display: 'block',
+  }}
+>
+  <div
+    onClick={handleShare}
+    style={{
+      display: 'inline-block',
+      cursor: 'pointer',
+      position: 'relative',
+    }}
+  >
+    <img
+      src="/coeur.webp"
+      alt="Partager"
+      width={90}
+      height={90}
+      style={{ borderRadius: '50%', boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }}
+    />
+
+    {fire && <SoftBurstWeb fire />} {/* 🌈 Animation au clic */}
+  </div>
+
+  <p style={{ marginTop: 12, fontSize: 16, color: '#333' }}>
+    Partager cette page ? :-)
+  </p>
 
           {/* 💬 Share fallback box */}
           {showShareBox && (
