@@ -10,6 +10,7 @@ import {
   MailIcon,
   CopyIcon,
 } from '@/components/ui/SocialIcons';
+import Link from 'next/link';
 import SoftBurstWeb from '@/components/SoftBurstWeb';
 
 const shareUrl = 'https://1gooodnews.app';
@@ -324,6 +325,26 @@ export default function ArchivesPageFR() {
           Suivante ➡️
         </button>
       </div>
+
+      {/* Bouton retour accueil */}
+      <Link
+        href="/fr"
+        style={{
+          backgroundColor: '#4CAF50',
+          padding: '12px 24px',
+          borderRadius: 30,
+          marginBottom: 30,
+          color: '#fff',
+          fontSize: 16,
+          textDecoration: 'none',
+          transition: 'background-color 0.3s ease',
+        }}
+        onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = '#43A047')}
+        onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = '#4CAF50')}
+      >
+        ⬅ Retour à l’accueil
+      </Link>
+
     </main>
   );
 }

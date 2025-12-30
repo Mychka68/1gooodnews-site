@@ -77,29 +77,51 @@ export default function AccueilFR() {
       <section style={{ maxWidth: 500, marginBottom: 40, color: '#333', fontSize: 16, lineHeight: '24px' }}>
         <Image src="/image_accueil.png" alt="Illustration 1gooodnews" width={400} height={150} style={{ objectFit: 'cover', borderRadius: 25, boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)', marginBottom: 20, maxWidth: '95%', height: 'auto' }} />
 
-        {/* Bouton Partager avec animation */}
-<div style={{ position: "relative", display: "inline-block", marginBottom: 10 }}>
-  <button
-    onClick={() => {
-      handleShare();
-      setFire(true);
-      setTimeout(() => setFire(false), 1200);
-    }}
-    style={{
-      backgroundColor: "#FF9800",
-      color: "#fff",
-      border: "none",
-      borderRadius: 30,
-      padding: "10px 22px",
-      fontSize: 14,
-      cursor: "pointer",
-      transition: "background-color 0.3s ease",
-    }}
-  >
-    📤 Partager cette page ? :-)
-  </button>
-  <SoftBurstWeb fire={fire} />
+       {/* 💛 Bouton Partager avec cœur + animation */}
+<div
+  style={{
+    marginTop: 1,
+    marginBottom: 30,
+    textAlign: 'center',
+    position: 'relative',
+    display: 'block',
+  }}
+>
+  <div style={{ display: 'inline-block', position: 'relative' }}>
+    <button
+      onClick={() => {
+        handleShare();
+        setFire(true);
+        setTimeout(() => setFire(false), 1200);
+      }}
+      style={{
+        backgroundColor: '#FF9800',
+        color: '#fff',
+        border: 'none',
+        borderRadius: 30,
+        padding: '10px 22px',
+        fontSize: 18,
+        cursor: 'pointer',
+        transition: 'background-color 0.3s ease',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '10px',
+      }}
+    >
+      {/* 💖 Icône cœur */}
+      <img
+        src="/coeur.webp"
+        alt="coeur"
+        style={{ width: 25, height: 25 }}
+      />
+      Partager cette page ? :-)
+    </button>
+
+    {/* 🌈 Animation colorée */}
+    {fire && <SoftBurstWeb fire />}
+  </div>
 </div>
+ 
 
 
         {/* Menu de partage fallback */}
