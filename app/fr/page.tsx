@@ -62,14 +62,14 @@ export default function AccueilFR() {
         <a href="https://play.google.com/store/apps/details?id=TON.PACKAGE" target="_blank" rel="noopener noreferrer" aria-label="Disponible sur Google Play" style={{ backgroundColor: '#4CAF50', borderRadius: 30, padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 150, height: 40, transition: 'background-color 0.3s ease' }}>
           <Image src="/logo-google-play.png" alt="Disponible sur Google Play" width={150} height={40} style={{ objectFit: 'contain' }} priority />
         </a>
-        {/* App Store */}
-        <a href="https://apps.apple.com/app/idTON_APP_ID" target="_blank" rel="noopener noreferrer" aria-label="Télécharger sur l’App Store" style={{ backgroundColor: '#4CAF50', borderRadius: 30, padding: '12px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 150, height: 40, transition: 'background-color 0.3s ease' }}>
-          <Image src="/logo-app-store.png" alt="Télécharger sur l’App Store" width={150} height={40} style={{ objectFit: 'contain' }} priority />
-        </a>
       </div>
 
-      <p style={{ fontStyle: 'italic', color: '#444', fontSize: 15, lineHeight: '22px', marginBottom: 15, marginTop: 15, maxWidth: 400 }}>
-        En cours de construction - Téléchargez l'application ici :-) C'est <strong>gratuit</strong>, tout <strong>léger</strong>, sans pub, et juste pour le plaisir !
+<p style={{ fontStyle: 'italic', color: '#444', fontSize: 15, lineHeight: '22px', marginBottom: 15, marginTop: 15, maxWidth: 400 }}>
+        Téléchargez l'application ici :-) C'est <strong>gratuit</strong>, tout <strong>léger</strong>, sans pub, et juste pour le plaisir !
+      </p>
+
+      <p style={{ fontStyle: 'italic', color: '#8ebfecff', fontSize: 15, lineHeight: '22px', marginBottom: 15, marginTop: 15, maxWidth: 400 }}>
+        et bientôt sur l'App Store :-)
       </p>
 
       <hr style={{ width: '20%', height: '2px', backgroundColor: '#4CAF50', border: 'none', borderRadius: '2px', margin: '30px auto 40px auto', opacity: 0.4 }} />
